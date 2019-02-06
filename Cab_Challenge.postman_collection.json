@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "1e707d13-abdc-4df0-a27a-ed1e7e827398",
+		"name": "Cab_Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "medalion_query",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"medallions\" : \"aaa,bbb\", \"pickup_date\": \"2011-05-16\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/medallion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medallion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clear_cache",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
