@@ -61,3 +61,5 @@ docker rm $(docker ps -a -q)
 ### Transfer files to cloud server
 sudo scp -i <key_file> -r user_management_system ubuntu@ec2-13-211-112-10.ap-southeast-2.compute.amazonaws.com:~/.
 ssh -i "<key_file>" ubuntu@ec2-13-211-112-10.ap-southeast-2.compute.amazonaws.com
+
+#### Open the endpoints with Postman to access the API
