@@ -13,6 +13,7 @@ from functools import wraps
 from flask_caching import Cache
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = os.environ['APP_SECRET_KEY']
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
